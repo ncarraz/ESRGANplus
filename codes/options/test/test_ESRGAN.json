@@ -1,5 +1,5 @@
 {
-  "name": "RRDB_ESRGAN_x4"
+  "name": "nESRGAN+_x4"
   , "suffix": "_ESRGAN"
   , "model": "srragan"
   , "scale": 4
