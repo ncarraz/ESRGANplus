@@ -18,15 +18,17 @@
 - Python packages: `pip install numpy opencv-python lmdb tensorboardX`
 
 ## How to test
-1. Modify the configuration file `codes/options/test/test_ESRGANplus.json`.
-2. Run the command: `python test -opt codes/options/test/test_ESRGANplus.json`.
+1. Place your low-resolution images in `test_image/LR` folder.
+2. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1lNky9afqEP-qdxrAwDFPJ1g0ui4x7Sin?usp=sharing) and place them in `test_image/pretrained_models`.
+2. Run the command: `python test_image/test.py test_image/test_image/pretrained_models/nESRGANplus.pth` (or any other models).
+3. The results are in `test_image/results` folder.
 
 
 ## How to train
 1. Prepare the datasets which can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1pRmhEmmY-tPF7uH8DuVthfHoApZWJ1QU).
 2. Prepare the PSNR-oriented pretrained model (all pretrained models can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1lNky9afqEP-qdxrAwDFPJ1g0ui4x7Sin?usp=sharing)).
 2. Modify the configuration file `codes/options/train/train_ESRGANplus.json`.
-3. Run the command `python train -opt codes/options/train/train_ESRGANplus.json`. 
+3. Run the command `python train.py -opt codes/options/train/train_ESRGANplus.json`. 
 
 ## Acknowledgement
 - This code is based on [BasicSR](https://github.com/xinntao/BasicSR).
