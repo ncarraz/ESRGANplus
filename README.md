@@ -20,7 +20,7 @@
 ## How to test
 1. Place your low-resolution images in `test_image/LR` folder.
 2. Download pretrained models from [Google Drive](https://drive.google.com/drive/folders/1lNky9afqEP-qdxrAwDFPJ1g0ui4x7Sin?usp=sharing) and place them in `test_image/pretrained_models`.
-2. Run the command: `python test_image/test.py test_image/test_image/pretrained_models/nESRGANplus.pth` (or any other models).
+2. Run the command: `python test_image/test.py test_image/pretrained_models/nESRGANplus.pth` (or any other models).
 3. The results are in `test_image/results` folder.
 
 
