@@ -1,5 +1,5 @@
 # ESRGAN+/nESRGAN+
-### [Paper Arxiv](https://arxiv.org/abs/2001.08073)
+### [Paper arXiv](https://arxiv.org/abs/2001.08073)
 ### [Paper IEEE Xplore](https://ieeexplore.ieee.org/document/9054071)
 ## ICASSP 2020 - ESRGAN+ : Further Improving Enhanced Super-Resolution Generative Adversarial Network
 
