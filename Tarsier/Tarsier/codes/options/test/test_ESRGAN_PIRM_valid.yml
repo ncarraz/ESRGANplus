@@ -1,0 +1,49 @@
+name: ESRGANplus_x4
+suffix: ~  # add suffix to saved images
+model: srgan
+distortion: sr
+scale: 4
+crop_border: ~  # crop border when evaluation. If None(~), crop the scale pixels
+gpu_ids: [0]
+
+datasets:
+#  test_1:  # the 1st test dataset
+#    name: set5
+#    mode: LQGT
+#    dataroot_GT: /private/home/oteytaud/malagan/codes/val_set5/Set5
+#    dataroot_LQ: /private/home/oteytaud/malagan/codes/val_set5/Set5_bicLRx4
+#  test_2:  # the 2st test dataset
+#    name: set14
+#    mode: LQGT
+#    dataroot_GT: /private/home/oteytaud/malagan/codes/val_set14/Set14
+#    dataroot_LQ: /private/home/oteytaud/malagan/codes/val_set14/Set14_bicLRx4
+  test_1:  # the 2st test dataset
+    name: PIRM_Val
+    mode: LQGT
+#    dataroot_GT: /content/gdrive/My Drive/ESRGAN/datasets/Set14
+#    dataroot_LQ: /private/home/oteytaud/malagan/codes/val_set14/Set14_bicLRx4
+#    dataroot_GT: /private/home/oteytaud/malagan/codes/val_set14/Set14
+#    dataroot_LQ: /private/home/oteytaud/malagan/codes/val_set14/Set14_bicLRx4
+#    dataroot_GT: /private/home/oteytaud/malagan/codes/flickr/Flickr2K/Flickr2K_HR
+#    dataroot_LQ: /private/home/oteytaud/malagan/codes/flickr/Flickr2K/Flickr2K_LR_bicubic/X2
+    dataroot_GT: /private/home/broz/workspaces/tests_malagan/malagan/PIRM_dataset/Validation/Original
+    dataroot_LQ: /private/home/broz/workspaces/tests_malagan/malagan/PIRM_dataset/Validation/4x_downsampled
+    #dataroot_LQ: /content/gdrive/My Drive/ESRGAN/datasets/Set14_LR_sub_bicLRx4
+
+#### network structures
+network_G:
+  which_model_G: RRDBNet
+  in_nc: 3
+  out_nc: 3
+  nf: 64
+  nb: 23
+  upscale: 4
+network_D:
+  which_model_D: discriminator_vgg_128
+  in_nc: 3
+  nf: 64
+#### path
+path:
+  pretrain_model_G: experiments/pretrained_models/ESRGANplus_x4_new_arch.pth #RRDB_ESRGAN_x4.pth
+  pretrain_model_D: experiments/pretrained_models/latest_D.pth
+#  pretrain_model_G: /content/gdrive/My Drive/ESRGAN/ESRGAN-test/models/ESRGANplus_x4_new_arch.pth
