@@ -1,7 +1,9 @@
-# ESRGAN+/nESRGAN+
+# ESRGAN+ nESRGAN+ Tarsier
+## ICASSP 2020 - ESRGAN+ : Further Improving Enhanced Super-Resolution Generative Adversarial Network
 ### [Paper arXiv](https://arxiv.org/abs/2001.08073)
 ### [Paper IEEE Xplore](https://ieeexplore.ieee.org/document/9054071)
-## ICASSP 2020 - ESRGAN+ : Further Improving Enhanced Super-Resolution Generative Adversarial Network
+## ICPR 2020 - Tarsier: Evolving Noise Injection in Super-Resolution GANs
+### [Paper arXiv](https://arxiv.org/abs/2009.12177)
 
 <p align="center">
   <img height="250" src="./figures/noise_per_residual_dense_block.PNG">
