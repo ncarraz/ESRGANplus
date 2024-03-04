@@ -4,6 +4,7 @@
 ### [Paper IEEE Xplore](https://ieeexplore.ieee.org/document/9054071)
 ## ICPR 2020 - Tarsier: Evolving Noise Injection in Super-Resolution GANs
 ### [Paper arXiv](https://arxiv.org/abs/2009.12177)
+### [Paper IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9413318)
 
 <p align="center">
   <img height="250" src="./figures/noise_per_residual_dense_block.PNG">
@@ -46,3 +47,15 @@
         volume={},  
         number={},  
         pages={3637-3641},}
+
+    @INPROCEEDINGS{9413318,
+        author={Roziere, Baptiste and Rakotonirina, Nathanaël Carraz and Hosu, Vlad and Rasoanaivo, Andry and Lin, Hanhe and Couprie, Camille and Teytaud, Olivier},
+        booktitle={2020 25th International Conference on Pattern Recognition (ICPR)}, 
+        title={Tarsier: Evolving Noise Injection in Super-Resolution GANs}, 
+        year={2021},
+        volume={},
+        number={},
+        pages={7028-7035},
+        keywords={Training;Image quality;Gaussian noise;Superresolution;Quality assessment;Pattern recognition;Standards},
+        doi={10.1109/ICPR48806.2021.9413318}}
+
